@@ -1,0 +1,52 @@
+.timeline {
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    color: rgba(0, 0, 0, .85);
+    position: relative;
+    height: 12px;
+    padding: 4px 0;
+}
+
+.timeline .rails {
+    position: absolute;
+    height: 4px;
+    border-radius: 2px;
+    transition: background-color .3s;
+    width: 100%;
+    background-color: #f5f5f5;
+}
+
+.timeline .cursor {
+    position: absolute;
+    width: 1px;
+    height: 14px;
+    margin-top: -5px;
+    border: 1px solid black;
+    border-right: 0;
+}
+
+.transaction-bar {
+    box-sizing: border-box;
+    color: rgba(0, 0, 0, .85);
+    position: relative;
+    height: 12px;
+    padding: 4px 0;
+}
+
+.event-line-top {
+    position: absolute;
+    width: 100%;
+    top: -9px;
+    height: 14px;
+    margin-left: 5px;
+    border-bottom: 1px solid black;
+}
+
+.event-line {
+    position: absolute;
+    width: 1px;
+    height: 14px;
+    border: 1px solid black;
+    margin-left: 5px;
+    border-right: 0;
+}
