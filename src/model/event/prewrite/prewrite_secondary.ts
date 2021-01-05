@@ -13,7 +13,7 @@ export class PrewriteSecondary implements AtomicEvent {
 
     applyOnStore(store: Store): void {
         store.setData(this.transaction_id, this.key, this.value);
-        store.setLock(this.transaction_id, this.key, {primary: this.primary});
+        store.setLock(this.transaction_id, this.key, {by_transaction: this.transaction_id, primary: this.primary});
     }
 
     get displayFields(): Array<{ name: string; value: string }> {

@@ -12,7 +12,7 @@ export class PrewritePrimary implements AtomicEvent {
 
     applyOnStore(store: Store): void {
         store.setData(this.transaction_id, this.key, this.value);
-        store.setLock(this.transaction_id, this.key, {primary: this.key});
+        store.setLock(this.transaction_id, this.key, {by_transaction: this.transaction_id, primary: this.key});
     }
 
     get displayFields(): Array<{ name: string; value: string }> {
