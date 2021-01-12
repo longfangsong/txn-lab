@@ -9,5 +9,6 @@ A frontend tool for visualize transaction handling process, based on the txn mod
 This project should work as 
 
 - The best tutorial for TiKV's transaction system.
-- A tool to construct different plots of requests, and predict the result 
+- A tool to construct different plots of requests, and predict the result.
 - A code generator for generating test code for TiKV.
+- A tool for visualizing real-world transation processes in TiKV and other transactional storages.
